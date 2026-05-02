@@ -30,7 +30,7 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="bg-amber-50 flex flex-col flex-1 overflow-x-hidden">
+    <div className="bg-app-background flex flex-col flex-1 overflow-x-hidden">
       <motion.div
         className="flex flex-row py-2 w-full justify-between"
         initial={{ opacity: 0, y: -100 }}
@@ -66,7 +66,7 @@ export default function Home() {
       </motion.div>
       <div className="flex flex-row mb-20">
         <motion.div
-          className="flex flex-col w-[500px]"
+          className="flex flex-col w-125"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </div>
         </motion.div>
-        <div className="flex flex-row overflow-hidden">
+        <div className="flex flex-row overflow-hidden w-max">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -117,7 +117,7 @@ export default function Home() {
             <Image
               src={fashionselfie}
               alt="fashionselfie"
-              className="h-90 w-70 rounded-[100px] relative -right-40"
+              className="h-90 w-60 rounded-[100px] relative -right-40"
             />
           </motion.div>
           <motion.div
@@ -128,7 +128,7 @@ export default function Home() {
             <Image
               src={fashionselfie2}
               alt="fashionselfie2"
-              className="h-90 w-70 rounded-[100px] relative top-20 -right-20"
+              className="h-90 w-60 rounded-[100px] relative top-20 -right-20"
             />
           </motion.div>
           <motion.div
@@ -139,13 +139,13 @@ export default function Home() {
             <Image
               src={fashionselfie3}
               alt="fashionselfie3"
-              className="h-90 w-70 rounded-[100px] relative top-30"
+              className="h-90 w-60 rounded-[100px] relative top-30"
             />
           </motion.div>
         </div>
       </div>
       <motion.div
-        className="flex flex-row self-center py-10 mb-40 mx-5 bg-amber-100"
+        className="flex flex-row self-center py-10 mb-20 mx-5 bg-amber-100"
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -195,102 +195,115 @@ export default function Home() {
           </p>
         </div>
       </motion.div>
-      <div className="flex flex-row w-full justify-between px-20 mb-40">
-        <motion.div
-          className="h-90 w-60 rounded-[20px] relative overflow-hidden"
-          initial={{ opacity: 0, y: -80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0, type: "spring", stiffness: 120, damping: 14 }}
-        >
-          <Image
-            src={fashioncategory}
-            alt="fashion category1"
-            fill
-            className="object-cover"
-          />
-          <motion.button
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
-            whileTap={{ scale: 1.1 }}
+      <div className="flex flex-col w-full justify-between px-20 mb-40">
+        <h2 className="text-black font-sans font-bold self-center  text-[50px]">
+          Categories
+        </h2>
+        <h3 className="font-sans text-black text-nowrap mb-10 text-center">
+          From Everyuday Essentials to Statement Pieces. Find your Fit
+        </h3>
+        <div className="flex flex-row justify-between">
+          <motion.div
+            className="h-90 w-60 rounded-[20px] relative overflow-hidden"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0,
+              type: "spring",
+              stiffness: 120,
+              damping: 14,
+            }}
           >
-            WOMEN
-          </motion.button>
-        </motion.div>
-        <motion.div
-          className="h-90 w-60 rounded-[20px] relative overflow-hidden"
-          initial={{ opacity: 0, y: -80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.2,
-            type: "spring",
-            stiffness: 120,
-            damping: 14,
-          }}
-        >
-          <Image
-            src={fashioncategory2}
-            alt="fashion category1"
-            fill
-            className="object-cover"
-          />
-          <motion.button
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
-            whileTap={{ scale: 1.1 }}
+            <Image
+              src={fashioncategory}
+              alt="fashion category1"
+              fill
+              className="object-cover"
+            />
+            <motion.button
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
+              whileTap={{ scale: 1.1 }}
+            >
+              WOMEN
+            </motion.button>
+          </motion.div>
+          <motion.div
+            className="h-90 w-60 rounded-[20px] relative overflow-hidden"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.2,
+              type: "spring",
+              stiffness: 120,
+              damping: 14,
+            }}
           >
-            MEN
-          </motion.button>
-        </motion.div>
-        <motion.div
-          className="h-90 w-60 rounded-[20px] relative overflow-hidden"
-          initial={{ opacity: 0, y: -80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.4,
-            type: "spring",
-            stiffness: 120,
-            damping: 14,
-          }}
-        >
-          <Image
-            src={fashioncategory3}
-            alt="fashion category1"
-            fill
-            className="object-cover"
-          />
-          <motion.button
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
-            whileTap={{ scale: 1.1 }}
+            <Image
+              src={fashioncategory2}
+              alt="fashion category1"
+              fill
+              className="object-cover"
+            />
+            <motion.button
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
+              whileTap={{ scale: 1.1 }}
+            >
+              MEN
+            </motion.button>
+          </motion.div>
+          <motion.div
+            className="h-90 w-60 rounded-[20px] relative overflow-hidden"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+              type: "spring",
+              stiffness: 120,
+              damping: 14,
+            }}
           >
-            BOY
-          </motion.button>
-        </motion.div>
-        <motion.div
-          className="h-90 w-60 rounded-[20px] relative overflow-hidden"
-          initial={{ opacity: 0, y: -80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.4,
-            type: "spring",
-            stiffness: 120,
-            damping: 14,
-          }}
-        >
-          <Image
-            src={fashioncategory4}
-            alt="fashion category1"
-            fill
-            className="object-cover"
-          />
-          <motion.button
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
-            whileTap={{ scale: 1.1 }}
+            <Image
+              src={fashioncategory3}
+              alt="fashion category1"
+              fill
+              className="object-cover"
+            />
+            <motion.button
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
+              whileTap={{ scale: 1.1 }}
+            >
+              BOY
+            </motion.button>
+          </motion.div>
+          <motion.div
+            className="h-90 w-60 rounded-[20px] relative overflow-hidden"
+            initial={{ opacity: 0, y: -80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+              type: "spring",
+              stiffness: 120,
+              damping: 14,
+            }}
           >
-            GIRLS
-          </motion.button>
-        </motion.div>
+            <Image
+              src={fashioncategory4}
+              alt="fashion category1"
+              fill
+              className="object-cover"
+            />
+            <motion.button
+              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-lg font-sans font-semibold"
+              whileTap={{ scale: 1.1 }}
+            >
+              GIRLS
+            </motion.button>
+          </motion.div>
+        </div>
       </div>
       <div className="flex flex-row bg-linear-to-r from-white to-zinc-900 to-75%">
         <motion.div
-          className="flex flex-col ml-20 w-[700px]"
+          className="flex flex-col ml-20 w-175"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
@@ -390,7 +403,7 @@ export default function Home() {
             asperiores molestiae consequatur ullam!
           </p>
         </motion.div>
-        <div className="flex flex-row mx-10 mb-40 self-center">
+        <div className="flex flex-row mx-10 mb-20 self-center">
           <motion.div
             className="bg-amber-100 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between mr-5 w-100"
             initial={{ opacity: 0, x: -100 }}

@@ -7,7 +7,7 @@ export function SponsorListCarousel() {
   const loopData = [...sponsorlist, ...sponsorlist];
 
   return (
-    <div className="overflow-hidden w-full bg-black mb-40">
+    <div className="overflow-hidden w-full bg-black mb-20">
       <div className="flex gap-6 w-max animate-[scroll_25s_linear_infinite] hover:[animation-play-state:paused]">
         {loopData.map((item, index) => (
           <div
