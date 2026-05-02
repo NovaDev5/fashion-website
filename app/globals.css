@@ -5,6 +5,7 @@
   --foreground: #171717;
   --app-background: #f8f8ff;
   --icons-background: black;
+  --features-background: #dadada;
 }
 
 @theme {
@@ -27,6 +28,7 @@
   --font-mono: var(--font-geist-mono);
   --color-app-background: var(--app-background);
   --color-icons-background: var(--icons-background);
+  --color-features-background: var(--features-background);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -5,7 +5,7 @@ export const reviewstars = (
     viewBox="0 0 260 40"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g fill="limegreen">
+    <g fill="gold">
       {Array.from({ length: 5 }).map((_, i) => (
         <polygon
           key={i}

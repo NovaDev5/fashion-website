@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </div>
       <motion.div
-        className="flex flex-row self-center py-10 mb-20 mx-5 bg-amber-100"
+        className="flex flex-row self-center py-10 mb-20 mx-5 bg-features-background"
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -405,7 +405,7 @@ export default function Home() {
         </motion.div>
         <div className="flex flex-row mx-10 mb-20 self-center">
           <motion.div
-            className="bg-amber-100 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between mr-5 w-100"
+            className="bg-features-background backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between mr-5 w-100"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4 }}
@@ -429,7 +429,7 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            className="bg-amber-100 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between mr-5 w-100"
+            className="bg-features-background backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between mr-5 w-100"
             initial={{ opacity: 0, y: -80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -453,7 +453,7 @@ export default function Home() {
             </div>
           </motion.div>
           <motion.div
-            className="bg-amber-100 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between w-100"
+            className="bg-features-background backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-5 flex flex-col justify-between w-100"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4 }}
